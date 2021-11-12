@@ -1,0 +1,543 @@
+body{
+    font-family : 'Raleway', sans-serif ;
+
+}
+/* cahier des charges :-couleur bleu #0065FC,
+                       -couleur bleu claire #DEEBFF
+                       -couleur de fond gris #F2F2F2
+                       -police Raleway sur google font
+-Concernant les breakpoints, nous avons convenu avec le client
+d’utiliser 992 px et 768 px. tout ce qui est en dessous de 768 pour les téléphones portables*/
+
+                                         /* navigation*/
+
+/* .= class  */
+.navigation  { 
+    display: flex; 
+    justify-content: space-around;            /*espace les 2 éléments entre eux*/
+    align-items: center;
+    width: 30%;                               /*prend 20% du bloc parent(la balise nav est le parent qui contient les enfants "div"*/
+}
+@media screen and (max-width: 767px){
+    .navigation{
+        width: 100%;
+    }
+    .navigation a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    }
+
+nav img{     /*logo*/
+    width: 30%;
+}
+/*version mobile*/
+@media screen and (max-width: 767px){
+nav img{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+
+}
+}
+
+
+.heb{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    height: 90px;
+    display: flex;
+    align-items: center; 
+    width: 150px;
+    justify-content: center;  
+}
+
+/*version mobile*/
+@media screen and (max-width: 767px){
+.heb{
+display: flex;
+border-top: none;
+border-bottom: 3px solid #0065FC;
+height: 40px;
+}
+}
+
+.act{
+    color: black;
+    
+}
+
+
+nav{    /*logo + lien hébergement et activité*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*version mobile*/
+@media screen and (max-width: 767px){
+    nav{
+       display: flex;
+       flex-direction: column;
+    }
+    }
+
+nav a{
+    text-decoration: none;   /*enlève la décoration automatiqur des liens(surlignement et bleu)*/
+}
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+                                             /*FORMULAIRE*/
+
+.formulaire{
+    display: flex; /*pour que la section se mette en ligne*/
+}                                                                                
+
+.formulaire i{
+    display: flex;
+    justify-content: center; /*on centre horizontalement dans la div*/
+    align-items: center; /*aligner verticalement dans la div*/
+    width: 50px; /*largeur du bloc*/
+    height: 40px; /*hauteur du bloc*/
+    background-color: #F2F2F2; /*couleur de fond*/
+    border-radius: 15px 0 0 15px; /*pour avoir les bords arrondis*/
+   
+}
+
+.formulaire input{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+    .formulaire input{
+        width: 240px;
+    }
+    }
+
+
+
+.formulaire button{
+    width: 120px;
+    height: 40px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.formulaire button::after {
+    content: "Rechercher";
+   
+}
+
+@media screen and (max-width: 767px){
+    .formulaire button::after{
+        content:"\F002";
+        font-family:"Font Awesome 5 Free" ;
+        font-weight: bold;
+    }
+    .formulaire button {
+         border-radius:  15px;
+         width: 45px;
+    }
+
+}
+
+img{
+    width:200px; /*(taille pour les image) voir decoupage de l ecran px non compatible responsive..*/
+}
+
+
+
+.p1{
+    font-size: 80%;
+}
+
+
+                                                                 /*FILTRES*/ /*organiser en fonction de la page*/
+                                                                 
+h2{
+    font-size: 16px;
+    width: 8%; /*largeur de son contenu*/
+    
+}
+
+
+.filtres{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    height: 130px;
+}
+
+.filtres-span:hover{
+    background-color: red;
+
+}
+
+@media screen and (max-width: 767px){
+    .filtres{
+        display: flex;
+        flex-wrap: wrap;
+        height: 220px;
+        justify-content: space-between;
+    }
+    h2{
+        width: 100%;
+    }
+    }
+
+   
+    
+
+
+.filtres span{
+    border: 2px solid; /* solid= bordure ligne continue*/
+    border-style: solid solid solid none;  /*solid en haut a droite et en bas et rien a gauche*/
+    border-radius: 50px; /*bord arrondi 50px = rond bien net*/
+    padding-right: 20px;/*espace interieur*/
+    border-top-color: hsl(0deg 0% 86%);/*couleur bordur haut* trouver grace à inspecter*/
+    border-right-color: hsl(0deg 0% 86%);
+    border-bottom-color:hsl(0deg 0% 86%);
+    display: flex;
+    align-items: center;/*aligner verticalement dans le span*/ /* tester sans*/
+    margin-right: 1rem; /*marge a droite*/
+    font-size: 16px; /*taille de la police*/
+    height: 40px;
+
+}
+
+.filtres i{
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    margin-right: 15px;
+}
+
+aside{
+    display: flex; /*pour aligné le "i" +le texte...*/
+    height: 50px;
+}
+
+.fa-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0065FC; 
+    border-radius: 50%;
+    border: 1px solid hsl(0deg 0% 86%);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.colorBleu{
+    color:#0065FC;
+}
+.colorGris{
+    color:hsl(0deg 0% 85%) ;
+}
+
+
+
+                                                   /* Hébergement*/
+
+.hebergement{
+    display: flex;                    /* display flex = par defaut image de la section les unes a coté des autres*/
+    justify-content: space-around;
+    flex-wrap: wrap;                  /*Pour que les éléments aillent à la ligne quand il n'y a plus de place*/
+    width: 68%;
+    background-color:#F2F2F2;
+    border-radius: 15px;   /*bord arrondi 15px sur les 4 côtés...*/
+    height: 580px;
+}
+
+@media screen and (max-width: 767px){
+    .hebergement{
+        width: 100%;
+        background-color: white;
+    }
+    
+
+}
+
+.hebergement img {
+object-fit: cover;   /*pour que les image soient zoomé et qu'on en voit qu'une partie*/
+border: 5px solid white;   /*Pour qu'il y ai une bordure de 2px trait plain blanc autour de l'image*/
+border-radius: 15px 15px 0 0;   /*pour avoir l'arrondi juste haut gauche et droite*/
+width: 180px; 
+height: 120px;
+}
+
+.hebergement article{
+    background-color: white;
+    border-radius: 15px;
+    height: 205px;
+    box-shadow: 0 0 10px #bababa;
+}
+
+
+.hebergement span{
+    padding-left: 10px;
+}
+
+.hebergement div{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 767px){
+    .hebergement article{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .hebergement img{
+        width: 96%;
+    }
+
+}
+
+h3{
+    width: 95%; /*taille du bloc h3 pour qu'il se mette bien en haut de la section*/
+    height: 0px;
+}
+
+h4{
+    margin: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.hebergement p{ 
+    font-weight: bold;
+    width: 95%;
+}
+.hebergement i{
+    font-size: 10px;
+}
+
+                                    /*MAIN*/  /*ou il y a hebergement et populaire pour pouvoir les mettre l'un à coté de l'autre*/
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px){
+    main{
+        flex-direction: column-reverse;
+    }
+    }
+
+
+                                             /*POPULAIRE*/
+
+
+
+.populaire{
+    display: flex;
+    flex-direction: column; /* pour que la section populaire soit en colonne et non en ligne*/
+    width: 30%;
+    background-color:#F2F2F2;
+    border-radius: 15px;
+    justify-content: space-evenly;
+
+}
+@media screen and (max-width: 767px){
+    .populaire{
+        width: 100%;
+        height: 490px;
+        border-radius: 0;
+    }
+    .populaire article{
+        margin-left: 8px;
+    }
+    .populaire div{
+        margin-left: 8px;
+    }
+}
+
+
+.populaire article{
+    display: flex;
+    width: 95%; 
+    height: 125px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #bababa;
+}
+
+.populaire img{
+
+object-fit: cover;   /*pour que les image soient zoomé et qu'on en voit qu'une partie*/
+border: 5px solid white;   /*Pour qu'il y ai une bordure de 2px trait plain blanc autour de l'image*/
+border-radius: 15px 0 0 15px;   /*pour avoir l'arrondi juste haut gauche et droite*/
+width: 110px;
+height: 110px;
+}
+
+h5{
+    width: 95%;
+    font-size: 16px;
+    margin: 0; /* pas de marge sinon trop haut*/
+}
+
+h6{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.populaire span{
+    width: 100%;
+}
+
+.populaire div{
+    display: flex;    /*flex column sur la div pour que ça se mette en colonne*/
+    flex-direction: column;
+}
+
+.etoile{
+   
+    height: 35%; /*j'ai reglé la hauteur et mis un display flex pour qu'elles se mettent bien en bas de la div*/
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.populaire i{
+    font-size: 10px;
+}
+
+                                           /*ACTIVTE*/
+
+.activite{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blocActivite{
+    width: 100%;
+    height: 600px;
+}
+
+.blocActivite2356{
+    width: 23%;
+    
+}
+
+.cubeActivite{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+.cubeActivite2356{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.hauteurTitre{
+    height: 70px;
+}
+.titreActivite{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+
+.imageActivite1{
+    background-image: url("./images/activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imageActivite2{
+    background-image: url("./images/activite/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imageActivite3{
+    background-image: url("./images/activite/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+@media screen and (max-width: 767px){
+    .activite{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+
+
+
+
+                                     /*footer(pied de page)*/
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+} 
+
+.propo{
+    margin: 0 0 0 50px;
+
+}
+
+.onglet{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+   footer{
+       flex-direction: column;
+       padding-left: 20px;
+
+   }
+   .propo{
+    margin: 0 ;
+
+}
+
+    }
+
+
