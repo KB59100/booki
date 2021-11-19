@@ -18,29 +18,12 @@ d’utiliser 992 px et 768 px. tout ce qui est en dessous de 768 pour les télé
     align-items: center;
     width: 30%;                               /*prend 20% du bloc parent(la balise nav est le parent qui contient les enfants "div"*/
 }
-@media screen and (max-width: 767px){
-    .navigation{
-        width: 100%;
-    }
-    .navigation a{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    }
+
 
 nav img{     /*logo*/
     width: 30%;
 }
-/*version mobile*/
-@media screen and (max-width: 767px){
-nav img{
-    width: 100%;
-    height: 50px;
-    margin-bottom: 15px;
 
-}
-}
 
 
 .heb{
@@ -51,16 +34,6 @@ nav img{
     align-items: center; 
     width: 150px;
     justify-content: center;  
-}
-
-/*version mobile*/
-@media screen and (max-width: 767px){
-.heb{
-display: flex;
-border-top: none;
-border-bottom: 3px solid #0065FC;
-height: 40px;
-}
 }
 
 .act{
@@ -74,13 +47,6 @@ nav{    /*logo + lien hébergement et activité*/
     justify-content: space-between;
     align-items: center;
 }
-/*version mobile*/
-@media screen and (max-width: 767px){
-    nav{
-       display: flex;
-       flex-direction: column;
-    }
-    }
 
 nav a{
     text-decoration: none;   /*enlève la décoration automatiqur des liens(surlignement et bleu)*/
@@ -90,6 +56,10 @@ h1{
     font-size: 22px;
     font-weight: bold;
 }
+
+
+
+
 
 
 
@@ -124,14 +94,6 @@ h1{
     font-weight: bold;
 }
 
-@media screen and (max-width: 767px){
-    .formulaire input{
-        width: 240px;
-    }
-    }
-
-
-
 .formulaire button{
     width: 120px;
     height: 40px;
@@ -146,19 +108,6 @@ h1{
 .formulaire button::after {
     content: "Rechercher";
    
-}
-
-@media screen and (max-width: 767px){
-    .formulaire button::after{
-        content:"\F002";
-        font-family:"Font Awesome 5 Free" ;
-        font-weight: bold;
-    }
-    .formulaire button {
-         border-radius:  15px;
-         width: 45px;
-    }
-
 }
 
 img{
@@ -189,25 +138,10 @@ h2{
 }
 
 .filtres-span:hover{
-    background-color: red;
+    background-color: #0065FC;
+      
 
 }
-
-@media screen and (max-width: 767px){
-    .filtres{
-        display: flex;
-        flex-wrap: wrap;
-        height: 220px;
-        justify-content: space-between;
-    }
-    h2{
-        width: 100%;
-    }
-    }
-
-   
-    
-
 
 .filtres span{
     border: 2px solid; /* solid= bordure ligne continue*/
@@ -261,6 +195,10 @@ aside{
     color:hsl(0deg 0% 85%) ;
 }
 
+       /*version mobile*/
+
+
+
 
 
                                                    /* Hébergement*/
@@ -275,14 +213,6 @@ aside{
     height: 580px;
 }
 
-@media screen and (max-width: 767px){
-    .hebergement{
-        width: 100%;
-        background-color: white;
-    }
-    
-
-}
 
 .hebergement img {
 object-fit: cover;   /*pour que les image soient zoomé et qu'on en voit qu'une partie*/
@@ -308,16 +238,6 @@ height: 120px;
     padding-left: 10px;
 }
 
-@media screen and (max-width: 767px){
-    .hebergement article{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .hebergement img{
-        width: 96%;
-    }
-
-}
 
 h3{
     width: 95%; /*taille du bloc h3 pour qu'il se mette bien en haut de la section*/
@@ -338,6 +258,8 @@ h4{
     font-size: 10px;
 }
 
+
+
                                     /*MAIN*/  /*ou il y a hebergement et populaire pour pouvoir les mettre l'un à coté de l'autre*/
 
 
@@ -345,11 +267,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 767px){
-    main{
-        flex-direction: column-reverse;
-    }
-    }
+
 
 
                                              /*POPULAIRE*/
@@ -365,20 +283,6 @@ main{
     justify-content: space-evenly;
 
 }
-@media screen and (max-width: 767px){
-    .populaire{
-        width: 100%;
-        height: 490px;
-        border-radius: 0;
-    }
-    .populaire article{
-        margin-left: 8px;
-    }
-    .populaire div{
-        margin-left: 8px;
-    }
-}
-
 
 .populaire article{
     display: flex;
@@ -400,9 +304,13 @@ height: 110px;
 
 h5{
     width: 95%;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0; /* pas de marge sinon trop haut*/
+    display: flex;
+    justify-content: space-between;
 }
+
+
 
 h6{
     font-size: 14px;
@@ -434,28 +342,33 @@ h6{
 
                                            /*ACTIVTE*/
 
+
 .activite{
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.blocActivite{
+.activite h7{
+    font-weight: bold;
+}
+
+.blocAct1{
     width: 100%;
     height: 400px;
 }
 
-.blocActivite2356{
+.blocAct2356{
     width: 23%;
     
 }
 
-.cubeActivite{
+.cubeAct1{
     width: 23%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 
-.cubeActivite2356{
+.cubeAct2356{
     width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
@@ -548,45 +461,174 @@ h6{
 }
 
 
-@media screen and (max-width: 767px){
-    .activite{
-        display: flex;
-        flex-direction: column;
-    }
-    }
-
-
-
-
 
                                      /*footer(pied de page)*/
 
 footer {
     display: flex;
     background-color: #F2F2F2;
-    justify-content: space-between;
+    justify-content: flex-start;
 } 
 
 .propo{
     margin: 0 0 0 50px;
+    width: 32%;             /*100% du conyainer divisé par 3 = 32%*/
+}
 
+.charte{
+    width: 32%;
 }
 
 .onglet{
     font-weight: bold;
+    width: 32%;
 }
+
+
+
+                                                                  /*VERSION MOBILE*/
+
 
 @media screen and (max-width: 767px){
-   footer{
-       flex-direction: column;
-       padding-left: 20px;
+    .navigation{
+        width: 100%;
+    }
+    .navigation a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav img{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+    
+    }
+    .heb{
+        display: flex;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        height: 40px;
+        }
 
-   }
-   .propo{
-    margin: 0 ;
+    nav{
+            display: flex;
+            flex-direction: column;
+         }
+    .formulaire input{
+        width: 200px;
+    }
+    .formulaire button::after{
+        content:"\F002";
+        font-family:"Font Awesome 5 Free" ;
+        font-weight: bold;
+    }
+    .formulaire button {
+         border-radius:  15px;
+         width: 45px;
+    }
+    .filtres{
+        display: flex;
+        flex-wrap: wrap;
+        height: 220px;
+        justify-content: space-between;
+    }
+    h2{
+        width: 100%;
+    }
+    .hebergement{
+        width: 100%;
+        background-color: white;
+        height: 100%
+    }
+    .hebergement article{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .hebergement img{
+        width: 96%;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    .populaire{
+        width: 100%;
+        height: 490px;
+        border-radius: 0;
+    }
+    .populaire article{
+        margin-left: 8px;
+    }
+    .populaire div{
+        margin-left: 8px;
+    }
+    .activite{
+        height: 1250px;
+    }
+    .flexBetween{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .cubeAct1{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .cubeAct2356{
+        margin-top: 15px;
+    }
+    .blocAct2356{
+        width: 100%;
+    }
 
-}
+    .imageActivite1{
+    height: 150px;
+    }
+    
+    .imageActivite4{
+        height: 150px;
+        } 
+    .imageActivite5{
+            height: 150px;
+            } 
+    footer{
+                flex-direction: column;
+                padding-left: 20px;
+            }
+    .propo{
+             margin: 0 ;
+             width: 100%;
+         }
+    .charte{
+             width: 100%;
+         }
+     .onglet{
+             width: 100%;
+         }   
 
     }
+
+    
+    @media all and (min-width: 1100px) and (max-width: 1600px){
+        .hebergement article{
+            margin: 35px;
+        }
+    }
+
+    @media screen and (max-width: 355px){
+        #filtreSpan2{
+            width: 110px;
+
+        }
+        }
+    
+
+    @media all and (min-width: 767px) and (max-width: 854px){
+        .hebergement{
+            height: 800px;
+        }
+    }
+
+
+
 
 
