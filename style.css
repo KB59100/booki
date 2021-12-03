@@ -2,6 +2,11 @@ body{
     font-family : 'Raleway', sans-serif ;
 
 }
+
+a{ text-decoration: none;
+    color:inherit;
+
+}
 /* cahier des charges :-couleur bleu #0065FC,
                        -couleur bleu claire #DEEBFF
                        -couleur de fond gris #F2F2F2
@@ -210,7 +215,8 @@ aside{
     width: 68%;
     background-color:#F2F2F2;
     border-radius: 15px;   /*bord arrondi 15px sur les 4 côtés...*/
-    height: 580px;
+    height: 610px;
+    margin-bottom: 30px;
 }
 
 
@@ -242,6 +248,7 @@ height: 120px;
 h3{
     width: 95%; /*taille du bloc h3 pour qu'il se mette bien en haut de la section*/
     height: 0px;
+    margin-bottom: 50px
 }
 
 h4{
@@ -281,6 +288,7 @@ main{
     background-color:#F2F2F2;
     border-radius: 15px;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 
 }
 
@@ -310,6 +318,9 @@ h5{
     justify-content: space-between;
 }
 
+i.fas.fa-chart-line {
+    font-size: 20px;
+}
 
 
 h6{
@@ -342,124 +353,60 @@ h6{
 
                                            /*ACTIVTE*/
 
-
-.activite{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.bloc1{
+    display: flex;
+    justify-content: space-around; /*pour espacer les photos entre elles horizontalement*/
+    width: 100%; /*pour que les 2 blocs1 prennent 100% de leur contenaire*/
 }
-
-.activite p{
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.blocAct1{
-    width: 100%;
-    height: 400px;
-}
-
-.blocAct2356{
-    width: 23%;
-    
-}
-
-.cubeAct1{
-    width: 23%;
+.premier{
+    height: 450px;
+    box-shadow: 0 0 10px #bababa; /*mettre l'ombre qui entour l'image*/
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
-
-.cubeAct2356{
-    width: 100%;
+.premier img{
+    height: 400px; /*l'image prend 400px en hauteur*/
+}
+.deuxieme{
+    box-shadow: 0 0 10px #bababa;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
-.hauteurTitre{
-    height: 50px;
+.deuxieme img{
+    height: 190px;
 }
-.titreActivite{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 5%;
-    width: 95%;
-    font-weight: bold;
+.troisieme{
+    box-shadow: 0 0 10px #bababa;
+    border-radius: 15px;
 }
-
-.imageActivite1{
-    background-image: url("./images/activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 330px;
-    border-radius: 15px 15px 0 0;
+.troisieme img{
+    height: 120px;
 }
-
-.imageActivite2{
-    background-image: url("./images/activite/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0;
-}
-
-.imageActivite3{
-    background-image: url("./images/activite/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
-
-.imageActivite4{
-    background-image: url("./images/activite/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 330px;
-    border-radius: 15px 15px 0 0;
-}
-
-.imageActivite5{
-    background-image: url("./images/activite/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
-}
-
-.imageActivite6{
-    background-image: url("./images/activite/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0;
-}
-
-.flexBetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flexColumnCentre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexColumnBetween{
+.bloc2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 380px;
+}
+.bloc3{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bloc3 p{
+    font-weight: bold;
+}
+.bloc3 img{
+    object-fit: cover;
+    width: 230px;
+    border-radius: 15px 15px 0 0;
+}
+.activites{
+    font-weight: bold;
+    margin-left: 10px;
     
 }
+
+
+
+
 
 
 
@@ -473,7 +420,7 @@ footer {
 
 .propo{
     margin: 0 0 0 50px;
-    width: 32%;             /*100% du conyainer divisé par 3 = 32%*/
+    width: 32%;             /*100% du container divisé par 3 = 32%*/
 }
 
 .charte{
@@ -546,6 +493,8 @@ footer {
         width: 100%;
         margin-bottom: 15px;
     }
+    
+   
     .hebergement img{
         width: 96%;
     }
@@ -563,34 +512,33 @@ footer {
     .populaire div{
         margin-left: 8px;
     }
-    .activite{
-        height: 1250px;
-    }
-    .flexBetween{
-        flex-direction: column;
-        align-items: normal;
-    }
-    .cubeAct1{
-        width: 100%;
-        margin-top: 15px;
-    }
-    .cubeAct2356{
-        margin-top: 15px;
-    }
-    .blocAct2356{
-        width: 100%;
-    }
 
-    .imageActivite1{
-    height: 150px;
+    .bloc3{
+        flex-direction: column;
+    }
+    .bloc3 img{
+        width: 100%;
+    }
+    .premier{
+        height: 150px;
+    }
+    .premier img{
+        height: 110px;
+    }
+    .deuxieme{
+        margin-bottom: 30px;
+    }
+    .deuxieme img{
+        height: 110px;
+    }
+    .troisieme{
+        margin-bottom: 30px;
+    }
+    .bloc1{
+        flex-direction: column;
+        height: 580px;
     }
     
-    .imageActivite4{
-        height: 150px;
-        } 
-    .imageActivite5{
-            height: 150px;
-            } 
     footer{
                 flex-direction: column;
                 padding-left: 20px;
@@ -616,17 +564,38 @@ footer {
     }
 
     @media screen and (max-width: 355px){
-        #filtreSpan2{
-            width: 110px;
-
+    
+        .filtres span{
+            margin-right: 0;
+        }
+        .filtres i{
+            margin-right: 5px;
         }
         }
     
 
     @media all and (min-width: 767px) and (max-width: 854px){
+        .filtres span{
+            margin-right: 3px;
+        }
         .hebergement{
             height: 800px;
+            width: 100%;
         }
+        main{
+            flex-direction: column; /* modif apres soutenance...*/
+        }
+        .populaire{
+            width: 100%;
+            height: 500px;
+        }
+        .bloc3{
+            flex-direction: column;/* modif apres soutenance...*/
+        }
+        .bloc1{
+            margin-bottom: 30px;/* modif apres soutenance...*/
+        }
+        
     }
 
 
