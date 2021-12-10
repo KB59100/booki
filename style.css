@@ -1,5 +1,5 @@
 body{
-    font-family : 'Raleway', sans-serif ;
+    font-family :'Raleway', sans-serif;
 
 }
 
@@ -249,7 +249,7 @@ h3{
     width: 95%; /*taille du bloc h3 pour qu'il se mette bien en haut de la section*/
     height: 0px;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 h4{
@@ -288,7 +288,7 @@ main{
     width: 30%;
     background-color:#F2F2F2;
     border-radius: 15px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 30px;
 
 }
@@ -561,20 +561,27 @@ footer {
     }
 
     
-    @media all and (min-width: 1100px) and (max-width: 1600px){    /*modif apres soutenance les caractéristique jusken 1950 au lieu de 1600*/
-        .hebergement article{                                       
+    @media all and (min-width: 1025px) and (max-width: 1600px){    /*modif apres soutenance les caractéristique jusken 1950 au lieu de 1600*/
+        /*.hebergement article{                                       
             margin: 50px;             
-        }
+        }*/
         .hebergement{
-            height: 700px;
+            height: 750px;
+            width: 65%;
+        }
+        .hebergement img{
+            width: 250px;
+        }
+        .bloc3 img{
+            width: 300px;
         }
     }
     @media all and (min-width: 1900px){
         .hebergement{
             width: 60%;
         }
-        .hebergement article{
-            margin: 60px;
+        .hebergement img{
+            width: 300px;
         }
         .hebergement{
             height: 800px;
