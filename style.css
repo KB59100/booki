@@ -175,23 +175,23 @@ h2{
     color: #0065FC;
     margin-right: 15px;
 }
-
-aside{
-    display: flex; /*pour aligné le "i" +le texte...*/
-    height: 50px;
-}
-
-.fa-info{
+.information{
     display: flex;
-    justify-content: center;
     align-items: center;
-    color:#0065FC; 
-    border-radius: 50%;
-    border: 1px solid hsl(0deg 0% 86%);
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+   
 }
+.info{
+    margin-right: 15px;
+    color: #0065FC;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:1px solid hsl(0deg 0% 85%);
+    text-align: center;
+    line-height: 30px;
+}
+
+
 
 .colorBleu{
     color:#0065FC;
@@ -248,7 +248,8 @@ height: 120px;
 h3{
     width: 95%; /*taille du bloc h3 pour qu'il se mette bien en haut de la section*/
     height: 0px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 h4{
@@ -299,6 +300,7 @@ main{
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 10px #bababa;
+    margin-left: 8px;
 }
 
 .populaire img{
@@ -311,15 +313,17 @@ height: 110px;
 }
 
 h5{
-    width: 95%;
+    width: 90%;
     font-size: 20px;
     margin: 0; /* pas de marge sinon trop haut*/
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
 i.fas.fa-chart-line {
     font-size: 20px;
+    margin-right: 20px;
 }
 
 
@@ -557,9 +561,36 @@ footer {
     }
 
     
-    @media all and (min-width: 1100px) and (max-width: 1600px){
+    @media all and (min-width: 1100px) and (max-width: 1600px){    /*modif apres soutenance les caractéristique jusken 1950 au lieu de 1600*/
+        .hebergement article{                                       
+            margin: 50px;             
+        }
+        .hebergement{
+            height: 700px;
+        }
+    }
+    @media all and (min-width: 1900px){
+        .hebergement{
+            width: 60%;
+        }
         .hebergement article{
-            margin: 35px;
+            margin: 60px;
+        }
+        .hebergement{
+            height: 800px;
+        }
+        .populaire{
+            width: 35%;
+        }
+        .populaire article{
+            width: 90%;
+            margin-left: 30px;
+        }
+        .bloc3 img{
+            width: 350px;
+        }
+        h5{
+            margin-left: 35px;
         }
     }
 
