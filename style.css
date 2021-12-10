@@ -177,7 +177,7 @@ h2{
 }
 
 aside{
-    display: flex; /*pour aligné le "i" +le texte...*/
+   display: flex; /*pour aligné le "i" +le texte...*/
     height: 50px;
 }
 
@@ -559,7 +559,7 @@ footer {
     
     @media all and (min-width: 1100px) and (max-width: 1600px){
         .hebergement article{
-            margin: 35px;
+            margin: 40px;
         }
     }
 
